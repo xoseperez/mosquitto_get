@@ -28,7 +28,7 @@ def main():
     parser.add_option("-?", "--help", action="help", help="show this help message.")
     parser.add_option('-h', "--host", action="store", dest="host", default='localhost', help="mqtt host to connect to. Defaults to localhost.")
     parser.add_option('-p', "--port", action="store", dest="port", default=1883, help="network port to connect to. Defaults to 1883.")
-    parser.add_option("-t", "--topic", action="store_true", dest="topic", default=False, help="mqtt topic to query.")
+    parser.add_option("-t", "--topic", action="store", dest="topic", default=False, help="mqtt topic to query.")
     parser.add_option("-o", "--timeout", action="store", dest="timeout", default=5, help="wait for a message this number of seconds.")
 
     (options, args) = parser.parse_args()
